@@ -6,27 +6,36 @@
   </head>
   <body>
     <header>
-      <img src="logo.jpg" alt="техномарт">
+      <a href="/"><img src="logo.jpg" alt="техномарт"></a>
+      <form>
+        <label for="search">Поиск:</label>
+        <input type="text" id="search">
+      </form>
       <ul>
-        <li>Поиск</li>
-        <li>Закладки</li>
-        <li>Корзина</li>
-        <li>Оформить заказ</li>
+        <li><a>Закладки<a</li>
+        <li><a>Корзина</a></li>
+        <li><a>Оформить заказ</a></li>
       </ul>
-      <h2>Интернет-магазин строительных материалов и инструментов для ремонта</h2>
-      <div>
-        <p>+7 (812) 555-05-55</p>
-        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      </div>
-      <ul>
-        <li><a href="">Войти</a></li>
-        <li><a href="">Регистрация</a></li>
-      </ul>
+      <section>
+        <h2>Интернет-магазин  строительных материалов  инструментов для ремонта</h2>
+        <div>
+          <a href="tel:7-812-555-05-55">+7 (812) 555-05-55</a>
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </div>
+        <ul>
+          <li><a>(картинка) Равшан Джамшутович</a></li>
+          <li><a>Выход(картика)</a></li>
+        </ul>
+        <ul>
+          <li><a href="">Мои заказы</a></li>
+          <li><a href="">Личный кабинет</a></li>
+        </ul>
+      </section>
       <nav>
         <ul>
           <li><a href="">Главная</a></li>
           <li><a href="">Компания</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
+          <li><a>Каталог</a></li>
           <li><a href="">Новости</a></li>
           <li><a href="">Спецпредложения</a></li>
           <li><a href="">Доставка</a></li>
@@ -35,15 +44,14 @@
       </nav>
     </header>
     <main>
-      <h1>Каталог товаров</h1>
       <ul>
         <li><a href="">Главная</a></li>
         <li><a href="">Каталог</a></li>
         <li><a href="">Инструмент</a></li>
-        <li><a href="">Перфораторы</a></li>
+        <li>Перфораторы</li>
       </ul>
-      <h2>Перфораторы</h2>
-      <section>
+      <h1>Перфораторы</h1>
+      <form>
         <h2>Поиск</h2>
         <h3>Производители</h3>
         <ul>
@@ -58,73 +66,73 @@
             <li>Аккумуляторные</li>
             <li>Сетевые</li>
           </ul>
-          <button type="button">Показать</button>
-      </section>
+          <button type="submit">Показать</button>
+        </form>
       <section>
         <h2>Результаты</h2>
-        <div>
+        <article>
           <img src="makita.jpg" alt="макита">
-          <p>Перфоратор BOSCH BFG 3000</p>
-          <p>22500 Р.</p>
-          <p>15500 Р.</p>
-        </div>
-        <div>
+          <h3>Перфоратор BOSCH BFG 3000</h3>
+          <del>22500 Р.</del>
+          <ins>15500 Р.</ins>
+        </article>
+        <article>
           <img src="makita.jpg" alt="макита">
-          <p>Перфоратор BOSCH BFG 6000</p>
-          <p>30500 Р.</p>
-          <p>25500 Р.</p>
-        </div>  
-        <div>
+          <h3>Перфоратор BOSCH BFG 6000</h3>
+          <del>30500 Р.</del>
+          <ins>25500 Р.</ins>
+        </article>  
+        <article>
           <img src="makita.jpg" alt="макита">
-          <p>Перфоратор BOSCH BFG 2000</p>
-          <p>12500 Р.</p>
-        </div>
-        <div>
-          <img src="makita.jpg" alt="макита">
-          <p>Перфоратор BOSCH BFG 3000</p>
-          <p>22500 Р.</p>
-          <p>15500 Р.</p>
-        </div>
-        <div>
-          <img src="makita.jpg" alt="макита">
-          <p>Перфоратор BOSCH BFG 6000</p>
-          <p>30500 Р.</p>
-          <p>25500 Р.</p>
-        </div>
-        <div>
-          <img src="makita.jpg" alt="макита">
-          <p>Перфоратор BOSCH BFG 2000</p>
-          <p>12500 Р.</p>
-        </div>
-        <div>
-          <img src="makita.jpg" alt="макита">
-          <p>Перфоратор BOSCH BFG 3000</p>
-          <p>22500 Р.</p>
-          <p>15500 Р.</p>
-        </div>
-        <div>
-          <img src="makita.jpg" alt="макита">
-          <p>Перфоратор BOSCH BFG 6000</p>
-          <p>30500 Р.</p>
-          <p>25500 Р.</p>
-        </div>
-        <div>
-          <img src="makita.jpg" alt="макита">
-          <p>Перфоратор BOSCH BFG 2000</p>
-          <p>12500 Р.</p>
-        </div>
+          <h3>Перфоратор BOSCH BFG 2000</h3>
+          <ins>12500 Р.</ins>
+        </article>
+        <article>
+            <img src="makita.jpg" alt="макита">
+            <h3>Перфоратор BOSCH BFG 3000</h3>
+            <del>22500 Р.</del>
+            <ins>15500 Р.</ins>
+          </article>
+          <article>
+            <img src="makita.jpg" alt="макита">
+            <h3>Перфоратор BOSCH BFG 6000</h3>
+            <del>30500 Р.</del>
+            <ins>25500 Р.</ins>
+          </article>  
+          <article>
+            <img src="makita.jpg" alt="макита">
+            <h3>Перфоратор BOSCH BFG 2000</h3>
+            <ins>12500 Р.</ins>
+          </article>
+          <article>
+              <img src="makita.jpg" alt="макита">
+              <h3>Перфоратор BOSCH BFG 3000</h3>
+              <del>22500 Р.</del>
+              <ins>15500 Р.</ins>
+            </article>
+            <article>
+              <img src="makita.jpg" alt="макита">
+              <h3>Перфоратор BOSCH BFG 6000</h3>
+              <del>30500 Р.</del>
+              <ins>25500 Р.</ins>
+            </article>  
+            <article>
+              <img src="makita.jpg" alt="макита">
+              <h3>Перфоратор BOSCH BFG 2000</h3>
+              <ins>12500 Р.</ins>
+            </article>
       </section>
     </main>
     <footer>
-      <img src="logo.jpg" alt="техномарт">
+      <a href=""><img src="logo.jpg" alt="техномарт"></a>
       <div>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p>+7 (812) 555-05-55</p>
+          <a href="tel:7-812-555-05-55">+7 (812) 555-05-55</a>
         </div>
         <nav>
             <ul>
               <li><a href="">Компания</a></li>
-              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="">Каталог</a></li>
               <li><a href="">Новости</a></li>
               <li><a href="">Спецпредложения</a></li>
               <li><a href="">Доставка</a></li>
@@ -152,7 +160,7 @@
           </p>
           <p>
               Разработано —
-              <a href="htmlacademy.ru">htmlacademy.ru</a>
+              <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </p>
     </footer>
   </body>
