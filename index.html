@@ -67,7 +67,6 @@
             <h4>Дрели</h4>
             <p>Соседям на радость</p>
             <a href="catalog.html">Открыть каталог</a>
-            <img src="img/drill.jpg" width="620" height="266" alt="реклама дрелей">
             <div>
               <button type="button">
                 <span class="visually-hidden">Предыдущий слайд</span>
@@ -81,7 +80,6 @@
             <h4>Перфораторы</h4>
             <p>Настоящие мужские игрушки</p>
             <a href="catalog.html">Открыть каталог</a>
-            <img src="img/hammer-drill.jpg" width="620" height="266" alt="реклама перфораторов">
             <div>
               <button type="button">
                 <span class="visually-hidden">Предыдущий слайд</span>
@@ -183,8 +181,8 @@
     <h3>Контакты</h3>
     <p>Вы можете забрать товар сами,
       заехав в наш офис:</p>
-    <img src="img/map.png" width="300" height="158" alt="карта">
-    <a href="#">Заблудились? напишите нам!</a>
+    <a href="#big-map"><img src="img/map.png" width="300" height="158" alt="карта"></a>
+    <a href="#write-us">Заблудились? напишите нам!</a>
   </section>
 </main>
 <footer>
@@ -226,5 +224,23 @@
     <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
   </p>
 </footer>
+<section id="write-us">
+  <h2 class="visually-hidden">Форма обратной связи</h2>
+  <button type="button">Закрыть</button>
+  <form>
+    <label for="name">Ваше имя:</label>
+    <input type="text" placeholder="Имя Фамилия" id="name">
+    <label for="email">Ваш e-mail:</label>
+    <input type="email" placeholder="email@examle.com" id="email">
+    <label for="text">Текст письма:</label>
+    <textarea id="text" placeholder="В свободной форме"></textarea>
+    <button type="submit">Отправить</button>
+  </form>
+</section>
+<section id="big-map">
+  <h2 class="visually-hidden">Как добраться</h2>
+  <img src="img/map-big.png" width="970" height="476" alt="карта">
+  <button type="button">Закрыть</button>
+</section>
 </body>
 </html>
