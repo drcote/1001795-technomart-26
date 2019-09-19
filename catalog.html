@@ -53,22 +53,43 @@
   <h1>Перфораторы</h1>
   <form>
     <h2>Фильтр:</h2>
-    <h3>Цена</h3>
-    <input type="range" multiple>
+    <label for="price">Цена</label>
+    <input type="range" multiple id="price">
     <input type="text" placeholder="0">
     <input type="text" placeholder="30000">
     <h3>Производители</h3>
     <ul>
-      <li><input type="checkbox" checked>Bosh</li>
-      <li><input type="checkbox">ИНТЕРСКОЛ</li>
-      <li><input type="checkbox" checked>MAKIta</li>
-      <li><input type="checkbox">Dewalt</li>
-      <li><input type="checkbox">Hitachi</li>
+      <li>
+        <input type="checkbox" checked id="bosh">
+        <label for="bosh">Bosh</label>
+      </li>
+      <li>
+        <input type="checkbox" id="interskol">
+        <label for="interskol">ИНТЕРСКОЛ</label>
+      </li>
+      <li>
+        <input type="checkbox" checked id="makita">
+        <label for="makita"> Makita</label>
+      </li>
+      <li>
+        <input type="checkbox" id="dewalt">
+        <label for="dewalt">Dewalt</label>
+      </li>
+      <li>
+        <input type="checkbox" id="hitachi">
+        <label for="hitachi">Hitachi</label>
+      </li>
     </ul>
     <h3>Питание:</h3>
     <ul>
-      <li><input type="radio" checked>Аккумуляторные</li>
-      <li><input type="radio">Сетевые</li>
+      <li>
+        <input type="radio" name="connection" checked id="rechargeable">
+        <label for="rechargeable">Аккумуляторные</label>
+      </li>
+      <li>
+        <input type="radio" name="connection" id="network">
+        <label for="network">Сетевые</label>
+      </li>
     </ul>
     <button type="submit">Показать</button>
   </form>
@@ -89,10 +110,10 @@
       </ul>
       <ul>
         <li>
-          <button type="button">по убыванию</button>
+          <button type="button"><span class="visually-hidden">по убыванию</span></button>
         </li>
         <li>
-          <button type="button">по возрастанию</button>
+          <button type="button"><span class="visually-hidden">по возрастанию</span></button>
         </li>
       </ul>
     </section>
@@ -152,7 +173,7 @@
     </article>
   </section>
   <section>
-    <h3>Навигация</h3>
+    <h3 class="visually-hidden">Навигация</h3>
     <ul>
       <li><a>1</a></li>
       <li><a href="#">2</a></li>
@@ -210,7 +231,7 @@
 </footer>
 <section>
   <h2>Товар добавлен в корзину!</h2>
-  <button type="button">Закрыть</button>
+  <button type="button"><span class="visually-hidden">Закрыть</span></button>
   <a href="#">Оформить заказ</a>
   <button type="button">Продолжить покупки</button>
 </section>
