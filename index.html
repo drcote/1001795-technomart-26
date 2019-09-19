@@ -7,9 +7,9 @@
 <body>
 <header>
   <img src="img/logo.svg" width="137" height="22" alt="техномарт">
-  <form>
+  <form action="index.html" method="get">
     <label for="search">Поиск:</label>
-    <input type="search" id="search">
+    <input type="search" id="search" name="search">
   </form>
   <ul>
     <li>Закладки</li>
@@ -224,23 +224,23 @@
     <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
   </p>
 </footer>
-<section id="write-us">
+<article id="write-us">
   <h2 class="visually-hidden">Форма обратной связи</h2>
   <button type="button"><span class="visually-hidden">Закрыть</span></button>
-  <form>
+  <form action="index.html" method="post">
     <label for="name">Ваше имя:</label>
-    <input type="text" placeholder="Имя Фамилия" id="name">
+    <input type="text" placeholder="Имя Фамилия" name="name" id="name">
     <label for="email">Ваш e-mail:</label>
-    <input type="email" placeholder="email@examle.com" id="email">
+    <input type="email" placeholder="email@examle.com" name="email" id="email">
     <label for="text">Текст письма:</label>
-    <textarea id="text" placeholder="В свободной форме"></textarea>
+    <textarea id="text" placeholder="В свободной форме" name="text"></textarea>
     <button type="submit">Отправить</button>
   </form>
-</section>
-<section id="big-map">
+</article>
+<article id="big-map">
   <h2 class="visually-hidden">Как добраться</h2>
   <img src="img/map-big.png" width="970" height="476" alt="карта">
   <button type="button"><span class="visually-hidden">Закрыть</span></button>
-</section>
+</article>
 </body>
 </html>

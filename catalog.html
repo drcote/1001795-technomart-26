@@ -7,9 +7,9 @@
 <body>
 <header>
   <a href="/"><img src="img/logo.svg" width="137" height="22" alt="техномарт"></a>
-  <form>
+  <form action="catalog.html" method="get">
     <label for="search">Поиск:</label>
-    <input type="search" id="search">
+    <input type="search" id="search" name="search">
   </form>
   <ul>
     <li><a href="#">Закладки</a></li>
@@ -51,43 +51,43 @@
     <li>Перфораторы</li>
   </ul>
   <h1>Перфораторы</h1>
-  <form>
+  <form action="catalog.html" method="get">
     <h2>Фильтр:</h2>
     <label for="price">Цена</label>
-    <input type="range" multiple id="price">
-    <input type="text" placeholder="0">
-    <input type="text" placeholder="30000">
+    <input type="range" multiple id="price" name="range-price">
+    <input type="text" placeholder="0" name="min-price">
+    <input type="text" placeholder="30000" name="max-price">
     <h3>Производители</h3>
     <ul>
       <li>
-        <input type="checkbox" checked id="bosh">
-        <label for="bosh">Bosh</label>
+        <input type="checkbox" checked id="bosch" name="bosch">
+        <label for="bosch">Bosch</label>
       </li>
       <li>
-        <input type="checkbox" id="interskol">
+        <input type="checkbox" id="interskol" name="interskol">
         <label for="interskol">ИНТЕРСКОЛ</label>
       </li>
       <li>
-        <input type="checkbox" checked id="makita">
-        <label for="makita"> Makita</label>
+        <input type="checkbox" checked id="makita" name="makita">
+        <label for="makita">Makita</label>
       </li>
       <li>
-        <input type="checkbox" id="dewalt">
+        <input type="checkbox" id="dewalt" name="dewalt">
         <label for="dewalt">Dewalt</label>
       </li>
       <li>
-        <input type="checkbox" id="hitachi">
+        <input type="checkbox" id="hitachi" name="hitachi">
         <label for="hitachi">Hitachi</label>
       </li>
     </ul>
     <h3>Питание:</h3>
     <ul>
       <li>
-        <input type="radio" name="connection" checked id="rechargeable">
+        <input type="radio" name="connection" value="rechargeable" checked id="rechargeable">
         <label for="rechargeable">Аккумуляторные</label>
       </li>
       <li>
-        <input type="radio" name="connection" id="network">
+        <input type="radio" name="connection" value="network" id="network">
         <label for="network">Сетевые</label>
       </li>
     </ul>
@@ -229,11 +229,11 @@
     <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
   </p>
 </footer>
-<section>
+<article>
   <h2>Товар добавлен в корзину!</h2>
   <button type="button"><span class="visually-hidden">Закрыть</span></button>
   <a href="#">Оформить заказ</a>
   <button type="button">Продолжить покупки</button>
-</section>
+</article>
 </body>
 </html>
