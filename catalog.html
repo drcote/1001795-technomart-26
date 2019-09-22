@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header>
@@ -56,8 +58,8 @@
     <fieldset>
       <legend>Цена</legend>
       <input type="range" multiple name="range-price">
-      <input type="text" placeholder="0" name="min-price">
-      <input type="text" placeholder="30000" name="max-price">
+      <input type="number" placeholder="0" name="min-price">
+      <input type="number" placeholder="30000" name="max-price">
     </fieldset>
     <fieldset>
       <legend>Производители</legend>
@@ -235,7 +237,7 @@
     <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
   </p>
 </footer>
-<article>
+<article id="add-goods">
   <h2>Товар добавлен в корзину!</h2>
   <button type="button"><span class="visually-hidden">Закрыть</span></button>
   <a href="#">Оформить заказ</a>

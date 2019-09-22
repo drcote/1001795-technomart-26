@@ -3,30 +3,36 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header>
-  <img src="img/logo.svg" width="137" height="22" alt="техномарт">
-  <form action="https://echo.htmlacademy.ru" method="get">
-    <label for="search">Поиск:</label>
-    <input type="search" id="search" name="search">
-  </form>
-  <ul>
-    <li>Закладки</li>
-    <li>Корзина</li>
-    <li>Оформить заказ</li>
-  </ul>
-  <h2>Интернет-магазин строительных материалов инструментов для ремонта</h2>
-  <div>
+  <div class="top-nav">
+    <div class="logo-top">
+      <img src="img/logo.svg" width="111" height="21" alt="техномарт">
+    </div>
+    <form action="https://echo.htmlacademy.ru" method="get" class="search">
+      <label for="search">Поиск:</label>
+      <input type="search" id="search" name="search">
+    </form>
+    <ul>
+      <li><a href="#">Закладки: 0</a></li>
+      <li><a href="#">Корзина: 0</a></li>
+      <li><a href="#">Оформить заказ</a></li>
+    </ul>
+  </div>
+  <h2 class="site-description">Интернет-магазин строительных материалов инструментов для ремонта</h2>
+  <div class="address">
     <a href="tel:7-812-555-05-55">+7 (812) 555-05-55</a>
     <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
   </div>
-  <ul>
+  <ul class="user-navigation">
     <li><a href="#">Войти</a></li>
     <li><a href="#">Регистрация</a></li>
   </ul>
   <nav>
-    <ul>
+    <ul class="site-navigation">
       <li>Главная</li>
       <li><a href="#">Компания</a></li>
       <li><a href="catalog.html">Каталог</a></li>
@@ -163,7 +169,7 @@
     <p>Кредитные консультанты придут вам на помощь.</p>
   </section>
   <h1 class="visually-hidden">Главная страница компании "Техномарт"</h1>
-  <section>
+  <section class="about-company">
     <h2>Компания &laquo;Техномарт&raquo;</h2>
     <p>Настоящий мужской шоппинг начинается здесь!
       Огромный выбор товаров для ремонта и строительства
@@ -177,7 +183,7 @@
     </ul>
     <a href="#">Подробнее о компании</a>
   </section>
-  <section>
+  <section class="contacts">
     <h3>Контакты</h3>
     <p>Вы можете забрать товар сами,
       заехав в наш офис:</p>
@@ -186,40 +192,46 @@
   </section>
 </main>
 <footer>
-  <img src="img/logo.svg" width="137" height="22" alt="техномарт">
-  <div>
-    <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-    <a href="tel:7-812-555-05-55">+7 (812) 555-05-55</a>
+  <div class="footer">
+    <div class="logo-bottom">
+      <img src="img/logo.svg" width="137" height="22" alt="техномарт">
+    </div>
+    <div class="footer-address">
+      <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      <a href="tel:7-812-555-05-55">+7 (812) 555-05-55</a>
+    </div>
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="#">Компания</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+    <nav class="footer-sections">
+      <ul>
+        <li><a href="#">Материалы</a></li>
+        <li><a href="#">Техника</a></li>
+        <li><a href="#">Инструмент</a></li>
+        <li><a href="#">Спецпредложения</a></li>
+      </ul>
+    </nav>
   </div>
-  <nav>
-    <ul>
-      <li><a href="#">Компания</a></li>
-      <li><a href="#">Новости</a></li>
-      <li><a href="catalog.html">Каталог</a></li>
-      <li><a href="#">Доставка</a></li>
-      <li><a href="#">Контакты</a></li>
-    </ul>
-  </nav>
-  <nav>
-    <li><a href="#">Материалы</a></li>
-    <li><a href="#">Техника</a></li>
-    <li><a href="#">Инструмент</a></li>
-    <li><a href="#">Спецпредложения</a></li>
-  </nav>
-  <div>
+  <div class="footer-copyright">
     <p>© 2010–2019 Компания «Техномарт»</p>
     <p>Все права защищены</p>
   </div>
-  <ul>
-    <li><a href="#"><img src="img/vk.svg" width="26" height="15" alt="Вконтакте">Вконтакте</a></li>
-    <li><a href="#"><img src="img/fb.svg" width="12" height="22" alt="Фейсбук">Фейсбук</a></li>
-    <li><a href="#"><img src="img/insta.svg" width="21" height="21" alt="Инстаграмм">Инстаграмм</a></li>
+  <ul class="footer-social">
+    <li><a href="#"><img src="img/vk.svg" width="26" height="15" alt="Вконтакте"><span class="visually-hidden">Вконтакте</span></a></li>
+    <li><a href="#"><img src="img/fb.svg" width="12" height="22" alt="Фейсбук"><span class="visually-hidden">Фейсбук</span></a></li>
+    <li><a href="#"><img src="img/insta.svg" width="21" height="21" alt="Инстаграмм"><span class="visually-hidden">Инстаграмм</span></a></li>
   </ul>
-  <p>
+  <p class="footer-feedback">
     Обратная связь:
     <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
   </p>
-  <p>
+  <p class="footer-developed">
     Разработано —
     <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
   </p>
