@@ -1,16 +1,112 @@
+@font-face {
+    font-family: "Cuprum";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Cuprum"),
+    url("../fonts/cuprum.woff2") format("woff2"),
+    url("../fonts/cuprum.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Cuprum";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/cuprumitalic.woff2") format("woff2"),
+    url("../fonts/cuprumitalic.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Cuprum";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../fonts/cuprumbold.woff2") format("woff2"),
+    url("../fonts/cuprumbold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../fonts/ptsansbold.woff2") format("woff2"),
+    url("../fonts/ptsansbold.woff") format("woff");
+}
+
 html {
     font-family: "Cuprum", Arial, sans-serif;
-    background-color: #ffffff;
 }
 
-a {
-    text-decoration: none;
-}
-
-li {
+.reset-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
+.title-secondary {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 1;
+}
+
+.title-tertiary {
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 1.25;
+}
+
+.title-content {
+    font-family: "PT Sans", "Arial Black", sans-serif;
+    font-size: 13px;
+    line-height: 1.38;
+    text-transform: uppercase;
+}
+
+.text-content {
+    font-family: "PT Sans", "Arial Black", sans-serif;
+    font-size: 13px;
+    line-height: 1.85;
+}
+
+
+.button {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.29;
+}
+
+.button-red {
+    background-color: #ee3643;
+}
+
+.button-transparent {
+    background-color: #000000;
+    opacity: 0.1;
+}
+
+.button-transparent:hover {
+    opacity: 0.2;
+}
+
+.button-transparent:active {
+    opacity: 0.3;
+}
+
+.partition {
+    background-color: #f4f7f9;
+}
 
 .logo-top {
     width: 220px;
@@ -24,51 +120,77 @@ li {
     margin-left: 54px;
 }
 
+
 .top-nav {
     background-color: #293449;
     color: #ffffff;
     font-size: 17px;
-    line-height: 18px;
+    line-height: 1.06;
 }
 
-.top-nav li,
-.user-navigation li,
-.footer-nav li,
-.footer-sections li {
-    list-style-type: none;
+.search input {
+    background-color: #293449;
+    border: none;
 }
 
-.top-nav a {
+.search:focus {
+    background-color: #212a3a;
+}
+
+.user-menu a {
     color: #ffffff;
 }
 
-.top-nav a:last-child {
+.user-menu a:hover {
+    background-color: #212a3a;
+}
+
+.user-menu a:active {
+    background-color: #161d29;
+    opacity: 0.6;
+}
+
+.basket a,
+.basket a:hover {
+    background-color: #ee3643;
+}
+
+.order a {
     background-color: #63a63e;
+}
+
+.order a:hover {
+    background-color: #5fbb2d;
+}
+
+.order a:active {
+    background-color: #518534;
+    opacity: 0.5;
 }
 
 .site-description {
     color: #ee3643;
-    font-size: 16px;
     font-style: italic;
-    line-height: 23px;
+    font-size: 16px;
+    line-height: 1.44;
 }
 
 .address a {
     color: #ee3643;
     font-size: 21px;
-    line-height: 21px;
+    line-height: 1;
 }
 
 .address p {
     color: #32425c;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.72;
 }
 
 .user-navigation a {
     color: #000000;
     font-size: 21px;
-    line-height: 21px;
+    line-height: 1;
 }
 
 .user-navigation a:hover {
@@ -80,39 +202,153 @@ li {
     color: #000000;
 }
 
+.personal-area a {
+    color: #32425c;
+    font-size: 16px;
+    line-height: 1.13;
+    text-decoration: underline;
+}
+
+.personal-area a:hover {
+    color: #ee3643;
+}
+
+.personal-area a:active {
+    color: #32425c;
+    opacity: 0.3;
+}
+
+.crumbs li,
+.crumbs a {
+    color: #000000;
+    font-family: "PT Sans", "Arial Black", sans-serif;
+    font-size: 13px;
+    line-height: 1.38;
+    text-transform: uppercase;
+}
+
 .site-navigation {
     background-color: #32425c;
     box-shadow: inset 0 -5px 0 #293449;
 }
 
-.site-navigation li {
-    color: #ffffff;
-    font-size: 17px;
-    line-height: 17px;
-}
-
-
 .site-navigation a {
     color: #ffffff;
+    font-size: 17px;
+    line-height: 1;
 }
 
-.about-company h2,
-.contacts h3 {
+.site-navigation a:hover {
+    background-color: #293449;
+}
+
+.site-navigation a:active {
+    background-color: #1d2739;
+    opacity: 0.5;
+}
+
+.materials {
+    background-color: #ffbf47;
+}
+
+.tool {
+    background-color: #3bbce3;
+}
+
+.technics {
+    background-color: #dc91d8;
+}
+
+.sale {
+    background-color: #8ed78f;
+}
+
+.delivery {
+    background-color: #ffc047;
+}
+
+.carusel a:hover {
+    background-color: #ca2c37;
+}
+
+.carusel a:active {
+    background-color: #ba2732;
+}
+
+.carusel-drill {
+    background: #3f2a25 url("../img/drill.jpg") no-repeat;
+}
+
+.carusel-perforator {
+    background: #3f2a25 url("../img/hammer-drill.jpg") no-repeat;
+}
+
+.carusel-title {
+    color: #ffffff;
+    font-size: 36px;
+    line-height: 1;
     text-transform: uppercase;
-    font-size: 30px;
-    line-height: 30px;
 }
 
-.about-company p,
-.contacts p {
-    font-family: "PT Sans";
-    font-size: 13px;
-    line-height: 24px;
+.carusel-description {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.33;
 }
 
 .about-company li {
     font-size: 18px;
-    line-height: 20px;
+    line-height: 1.11;
+}
+
+.section {
+    background-color: #f9f5f0;
+}
+
+.card {
+    font-family: "PT Sans", "Arial Black", sans-serif;
+}
+
+.card-description {
+    color: #000000;
+    font-size: 18px;
+    line-height: 1.11;
+}
+
+.card-price {
+    font-size: 17px;
+    line-height: 1.06;
+}
+
+.card del {
+    color: #999999;
+}
+
+.card ins {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #ee3643;
+}
+
+.menu-service {
+    font-size: 21px;
+    line-height: 1.43;
+}
+
+.menu-service a {
+    color: #ffffff;
+    box-shadow: 0 1px 0 #293449, inset 0 1px 0 #405069;
+    background-color: #32425c;
+}
+
+.menu-service a:hover {
+    background-color: #293449;
+}
+
+.menu-service a:active {
+    color: #32425c;
+    box-shadow: 0 1px 0 #ffffff, inset 0 1px 0 #ffffff;
+    background-color: #ffffff;
 }
 
 .about-company li:before {
@@ -125,20 +361,64 @@ li {
     margin-bottom: 3px;
 }
 
-.about-company a,
-.contacts a:last-child {
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 18px;
-    background-color: #ee3643;
+.form {
+    border: 0 none;
 }
 
-footer {
-    background-color: #293449;
+.form legend {
+    font-family: "PT Sans", "Arial Black", sans-serif;
+    font-size: 17px;
+    line-height: 1.76;
+    text-transform: uppercase;
+}
+
+.form label {
+    font-family: "PT Sans", "Arial Black", sans-serif;
+    font-size: 15px;
+    line-height: 1.33;
+    text-transform: uppercase;
+}
+
+.form input {
+    font-family: "PT Sans", "Arial Black", sans-serif;
+    font-size: 17px;
+    line-height: 1.06;
+    text-transform: uppercase;
+}
+
+.button-form {
+    font-family: "PT Sans", "Arial Black", sans-serif;
+    font-size: 13px;
+    line-height: 1.38;
+    text-transform: uppercase;
+}
+
+.filter  {
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0.4;
+    border-bottom: #ee3643 1px dotted;
+}
+
+.filter:hover {
+    opacity: 1;
+    border-bottom: #ee3643 1px solid;
+}
+
+.filter:active {
+    opacity: 1;
+    color: #ee3643;
+    border-bottom: none;
 }
 
 .footer {
+    background-color: #293449;
+}
+
+.footer-up {
     background-color: #32425c;
 }
 
@@ -157,7 +437,7 @@ footer {
 .footer-address {
     color: #f3f7f9;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.33;
 
 }
 
@@ -165,16 +445,17 @@ footer {
     color: #f3f7f9;
 }
 
+.footer-address a:hover {
+    text-decoration: none;
+}
+
 .footer-nav a {
     color: #f1f5f7;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.33;
 }
 
-.footer-nav a:hover,
-.footer-sections a:hover,
-.footer-feedback a:hover,
-.footer-developed a:hover {
+footer a:hover {
     text-decoration: underline;
 }
 
@@ -187,13 +468,13 @@ footer {
 .footer-sections a {
     color: #ffd180;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.33;
 }
 
 .footer-copyright {
     color: #ffffff;
     font-size: 16px;
-    line-height: 18px;
+    line-height: 1.13;
 }
 
 .footer-social a {
@@ -211,7 +492,7 @@ footer {
 .footer-feedback,
 .footer-developed {
     font-size: 16px;
-    line-height: 18px;
+    line-height: 1.13;
     color: #ffffff;
 }
 
@@ -226,67 +507,18 @@ footer {
     color: #ee3643;
 }
 
-#write-us {
-    display: none;
-}
-
-#big-map {
-    display: none;
-}
-
-#add-goods {
-    display: none;
-}
-
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active) {
     position: absolute;
-    clip: rect(0 0 0 0);
+
     width: 1px;
     height: 1px;
     margin: -1px;
-}
+    border: 0;
+    padding: 0;
 
-@font-face {
-    font-family: "Cuprum";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Cuprum"),
-    url("/fonts/cuprum.woff2") format("woff2"),
-    url("/fonts/cuprum.woff") format("woff");
-}
+    white-space: nowrap;
 
-@font-face {
-    font-family: "Cuprum";
-    font-style: italic;
-    font-weight: 400;
-    src: local("Cuprum Italic"),
-    url("/fonts/cuprumitalic.woff2") format("woff2"),
-    url("/fonts/cuprumitalic.woff") format("woff");
-}
-
-@font-face {
-    font-family: "Cuprum";
-    font-style: normal;
-    font-weight: 700;
-    src: local("Cuprum Bold"),
-    url("/fonts/cuprumbold.woff2") format("woff2"),
-    url("/fonts/cuprumbold.woff") format("woff");
-}
-
-@font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: local("PT Sans"),
-    url("/fonts/ptsans.woff2") format("woff2"),
-    url("/fonts/ptsans.woff") format("woff");
-}
-
-@font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 700;
-    src: local("PT Sans Bold"),
-    url("/fonts/ptsansbold.woff2") format("woff2"),
-    url("/fonts/ptsansbold.woff") format("woff");
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
