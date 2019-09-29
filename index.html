@@ -7,16 +7,18 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="partition">
+<header class="partition partition-header">
   <div class="top-nav">
     <div class="container">
-      <div class="logo-top">
-        <a><img src="img/logo.svg" width="111" height="21" alt="техномарт"></a>
+      <div class="logo-search-wrap">
+        <div class="logo-top">
+          <a><img src="img/logo.svg" width="111" height="21" alt="техномарт"></a>
+        </div>
+        <form action="https://echo.htmlacademy.ru" method="get" class="search">
+          <label for="search">Поиск:</label>
+          <input type="search" id="search" name="search">
+        </form>
       </div>
-      <form action="https://echo.htmlacademy.ru" method="get" class="search">
-        <label for="search">Поиск:</label>
-        <input type="search" id="search" name="search">
-      </form>
       <ul class="user-menu reset-list">
         <li><a href="#">Закладки: 0</a></li>
         <li><a href="#">Корзина: 0</a></li>
@@ -49,70 +51,62 @@
     </nav>
   </div>
 </header>
-<main>
+<main class="main">
   <div class="container">
-    <section>
-      <div class="features-wrap reset-list">
-        <article class="materials">
-          <h3 class="title-tertiary">Материалы</h3>
+    <section class="catalog">
+      <h2 class="visually-hidden">Наши предложения</h2>
+      <div class="catalog-left">
+        <div class="catalog-item">
+          <b class="title-tertiary">Материалы</b>
           <a href="#" class="button button-transparent">На любой вкус</a>
           <mark>New</mark>
-        </article>
-        <article class="tool">
-          <h3 class="title-tertiary">Инструмент</h3>
-          <a href="#" class="button button-transparent">На все случаи</a>
-        </article>
-        <article class="technics">
-          <h3 class="title-tertiary">Техника</h3>
-          <a href="#" class="button button-transparent">Для стройки</a>
-        </article>
-      </div>
-      <div class="carusel-wrap reset-list">
-        <div class="features-add-wrap">
-          <article class="sale">
-            <h3 class="title-tertiary">Скидки 50%</h3>
-            <a href="#" class="button button-transparent">На 350 товаров</a>
-          </article>
-          <article class="delivery">
-            <h3 class="title-tertiary">Доставка</h3>
-            <a href="" class="button button-transparent">Бесплатно</a>
-          </article>
         </div>
-        <ul class="reset-list">
-          <li>
-            <ul class="carusel reset-list">
-              <li class="carusel-drill">
-                <h4 class="carusel-title">Дрели</h4>
-                <p class="carusel-description">Соседям на радость</p>
-                <a href="catalog.html" class="button button-red">Открыть каталог</a>
-                <div>
-                  <button type="button">
-                    <span class="visually-hidden">Предыдущий слайд</span>
-                  </button>
-                  <button type="button">
-                    <span class="visually-hidden">Следующий слайд</span>
-                  </button>
-                </div>
-              </li>
-              <li class="carusel-perforator" hidden>
-                <h4 class="carusel-title">Перфораторы</h4>
-                <p class="carusel-description">Настоящие мужские игрушки</p>
-                <a href="catalog.html" class="button button-red">Открыть каталог</a>
-                <div>
-                  <button type="button">
-                    <span class="visually-hidden">Предыдущий слайд</span>
-                  </button>
-                  <button type="button">
-                    <span class="visually-hidden">Следующий слайд</span>
-                  </button>
-                </div>
-              </li>
-            </ul>
+        <div class="catalog-item">
+          <b class="title-tertiary">Инструмент</b>
+          <a href="#" class="button button-transparent">На все случаи</a>
+        </div>
+
+        <div class="catalog-carousel">
+          <div class="carousel carousel-drill">
+            <b class="carousel-title">Дрели</b>
+            <p class="carousel-description">Соседям на радость</p>
+            <a href="catalog.html" class="button button-red">Открыть каталог</a>
+          </div>
+          <div class="carousel carousel-perforator" hidden>
+            <b class="carusel-title">Перфораторы</b>
+            <p class="carousel-description">Настоящие мужские игрушки</p>
+            <a href="catalog.html" class="button button-red">Открыть каталог</a>
+          </div>
+        </div>
+        <ul class="carousel-controls reset-list" hidden>
+          <li class="carousel-control-item">
+            <button type="button" class="carousel-btn carousel-btn-prev">
+              <span class="visually-hidden">Предыдущий слайд</span>
+            </button>
+          </li>
+          <li class="carousel-control-item">
+            <button type="button" class="carousel-btn carousel-btn-next">
+              <span class="visually-hidden">Следующий слайд</span>
+            </button>
           </li>
         </ul>
       </div>
+      <div class="catalog-right">
+        <div class="catalog-item">
+          <b class="title-tertiary">Техника</b>
+          <a href="#" class="button button-transparent">Для стройки</a>
+        </div>
+        <div class="catalog-item">
+          <b class="title-tertiary">Скидки 50%</b>
+          <a href="#" class="button button-transparent">На 350 товаров</a>
+        </div>
+        <div class="catalog-item">
+          <d class="title-tertiary">Доставка</d>
+          <a href="" class="button button-transparent">Бесплатно</a>
+        </div>
+      </div>
     </section>
-    <section>
+    <section class="popular-products">
       <div class="section">
         <h2 class="title-secondary">Популярные товары:</h2>
         <a href="#" class="button button-red">Все популярные товары</a>
@@ -144,7 +138,7 @@
         </article>
       </div>
     </section>
-    <section>
+    <section class="popular-brands">
       <div class="section">
         <h2 class="title-secondary">Популярные производители:</h2>
         <a href="#" class="button button-red">Все производители</a>
@@ -160,38 +154,40 @@
         <li><a href="#"><img src="img/metabo.png" width="204" height="69" alt="metabo"></a></li>
       </ul>
     </section>
-    <div class="partition">
-      <section>
-        <h2 class="title-secondary">Сервисы</h2>
-        <p class="text-content">Хороший интернет-магазин отличается от плохого не только ценами!
-          Мы старавемся изо всех сил, чтобы сделать ваши покупки приятными</p>
-        <div class="services-wrap">
-          <ul class="reset-list menu-service">
-            <li><a href="#delivery">Доставка</a></li>
-            <li><a href="#guarantee">Гарантия</a></li>
-            <li><a href="#credit">Кредит</a></li>
-          </ul>
-          <article id="delivery">
-            <h3 class="title-secondary">Доставка</h3>
-            <p class="text-content">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-              Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-          </article>
-          <article id="guarantee" hidden>
-            <h3 class="title-secondary">Гарантия</h3>
-            <p class="text-content">Если купленный у нас товар поломается или заискрит, а также в случае пожара,
-              спровоцированного его
-              возгоранием,
-              вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
-            <p class="text-content">Дом уж восстановите как-нибудь сами.</p>
-          </article>
-          <article id="credit" hidden>
-            <h3 class="title-secondary">Кредит</h3>
-            <p class="text-content">Залезть в долговую яму стало проще!</p>
-            <p class="text-content">Кредитные консультанты придут вам на помощь.</p>
-          </article>
-        </div>
-      </section>
+  </div>
+  <section class="partition partition-services">
+    <div class="container">
+      <h2 class="title-secondary">Сервисы</h2>
+      <p class="text-content">Хороший интернет-магазин отличается от плохого не только ценами!
+        Мы старавемся изо всех сил, чтобы сделать ваши покупки приятными</p>
+      <div class="services-wrap">
+        <ul class="reset-list menu-service">
+          <li><a href="#delivery">Доставка</a></li>
+          <li><a href="#guarantee">Гарантия</a></li>
+          <li><a href="#credit">Кредит</a></li>
+        </ul>
+        <article id="delivery">
+          <h3 class="title-secondary">Доставка</h3>
+          <p class="text-content">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+            Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+        </article>
+        <article id="guarantee" hidden>
+          <h3 class="title-secondary">Гарантия</h3>
+          <p class="text-content">Если купленный у нас товар поломается или заискрит, а также в случае пожара,
+            спровоцированного его
+            возгоранием,
+            вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
+          <p class="text-content">Дом уж восстановите как-нибудь сами.</p>
+        </article>
+        <article id="credit" hidden>
+          <h3 class="title-secondary">Кредит</h3>
+          <p class="text-content">Залезть в долговую яму стало проще!</p>
+          <p class="text-content">Кредитные консультанты придут вам на помощь.</p>
+        </article>
+      </div>
     </div>
+  </section>
+  <div class="container">
     <h1 class="visually-hidden">Главная страница компании "Техномарт"</h1>
     <div class="about-company-wrap">
       <section class="about-company">
