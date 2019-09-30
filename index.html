@@ -11,9 +11,7 @@
   <div class="top-nav">
     <div class="container">
       <div class="logo-search-wrap">
-        <div class="logo-top">
-          <a><img src="img/logo.svg" width="111" height="21" alt="техномарт"></a>
-        </div>
+        <a class="logo-top"><img src="img/logo.svg" width="111" height="21" alt="техномарт"></a>
         <form action="https://echo.htmlacademy.ru" method="get" class="search">
           <label for="search">Поиск:</label>
           <input type="search" id="search" name="search">
@@ -28,7 +26,7 @@
   </div>
   <div class="container">
     <div class="header-company-wrap">
-      <h2 class="site-description">Интернет-магазин строительных материалов инструментов для ремонта</h2>
+      <h2 class="site-description">Интернет-магазин<br> строительных материалов<br> инструментов для ремонта</h2>
       <div class="address">
         <a href="tel:7-812-555-05-55">+7 (812) 555-05-55</a>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -56,10 +54,9 @@
     <section class="catalog">
       <h2 class="visually-hidden">Наши предложения</h2>
       <div class="catalog-left">
-        <div class="catalog-item">
+        <div class="catalog-item new">
           <b class="title-tertiary">Материалы</b>
           <a href="#" class="button button-transparent">На любой вкус</a>
-          <mark>New</mark>
         </div>
         <div class="catalog-item">
           <b class="title-tertiary">Инструмент</b>
@@ -130,11 +127,10 @@
           <del class="card-price">30500 Р.</del>
           <ins class="card-price">25500 Р.</ins>
         </article>
-        <article class="card">
+        <article class="card new">
           <img src="img/perforator-4.png" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
           <h3 class="card-description">Перфоратор BOSCH BFG 2000</h3>
           <ins class="card-price">12500 Р.</ins>
-          <mark>New</mark>
         </article>
       </div>
     </section>
@@ -166,24 +162,24 @@
           <li><a href="#guarantee">Гарантия</a></li>
           <li><a href="#credit">Кредит</a></li>
         </ul>
-        <article id="delivery">
+        <section id="delivery">
           <h3 class="title-secondary">Доставка</h3>
           <p class="text-content">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
             Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-        </article>
-        <article id="guarantee" hidden>
+        </section>
+        <section id="guarantee" hidden>
           <h3 class="title-secondary">Гарантия</h3>
           <p class="text-content">Если купленный у нас товар поломается или заискрит, а также в случае пожара,
             спровоцированного его
             возгоранием,
             вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
           <p class="text-content">Дом уж восстановите как-нибудь сами.</p>
-        </article>
-        <article id="credit" hidden>
+        </section>
+        <section id="credit" hidden>
           <h3 class="title-secondary">Кредит</h3>
           <p class="text-content">Залезть в долговую яму стало проще!</p>
           <p class="text-content">Кредитные консультанты придут вам на помощь.</p>
-        </article>
+        </section>
       </div>
     </div>
   </section>
@@ -219,7 +215,7 @@
     <div class="container">
       <div class="logo-contacts">
         <div class="logo-bottom">
-          <img src="img/logo.svg" width="137" height="22" alt="техномарт">
+          <img src="img/logo.svg" width="140" height="25" alt="техномарт">
         </div>
         <div class="footer-address">
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -253,11 +249,12 @@
       <p>Все права защищены</p>
     </div>
     <ul class="footer-social reset-list">
-      <li><a href="#"><img src="img/vk.svg" width="26" height="15" alt="Вконтакте"><span
+      <li class="footer-social-item"><a href="#"><img src="img/vk.svg" width="26" height="15" alt="Вконтакте"><span
               class="visually-hidden">Вконтакте</span></a></li>
-      <li><a href="#"><img src="img/fb.svg" width="12" height="22" alt="Фейсбук"><span
+      <li class="footer-social-item"><a href="#"><img src="img/fb.svg" width="12" height="22" alt="Фейсбук"><span
               class="visually-hidden">Фейсбук</span></a></li>
-      <li><a href="#"><img src="img/insta.svg" width="21" height="21" alt="Инстаграмм"><span class="visually-hidden">Инстаграмм</span></a>
+      <li class="footer-social-item"><a href="#"><img src="img/insta.svg" width="21" height="21" alt="Инстаграмм"><span
+              class="visually-hidden">Инстаграмм</span></a>
       </li>
     </ul>
     <p class="footer-feedback">
