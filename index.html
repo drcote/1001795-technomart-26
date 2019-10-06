@@ -26,7 +26,10 @@
   </div>
   <div class="container">
     <div class="header-company-wrap">
-      <h2 class="site-description">Интернет-магазин<br> строительных материалов<br> инструментов для ремонта</h2>
+      <h2 class="site-description">Интернет-магазин
+        <span class="new-line-text">строительных материалов</span>
+        <span class="new-line-text">инструментов для ремонта</span>
+      </h2>
       <div class="address">
         <a href="tel:7-812-555-05-55">+7 (812) 555-05-55</a>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -179,20 +182,23 @@
   <section class="partition partition-services">
     <div class="container">
       <h2 class="title-secondary">Сервисы</h2>
-      <p class="text-content">Хороший интернет-магазин отличается от плохого не только ценами!<br>
-        Мы старавемся изо всех сил, чтобы сделать ваши покупки приятными</p>
+      <p class="text-content">Хороший интернет-магазин отличается от плохого не только ценами!
+        <span class="new-line-text">Мы старавемся изо всех сил, чтобы сделать ваши покупки приятными</span>
+      </p>
       <div class="services-wrap">
         <ul class="reset-list menu-service">
-          <li><a href="#delivery">Доставка</a></li>
-          <li><a href="#guarantee">Гарантия</a></li>
-          <li><a href="#credit">Кредит</a></li>
+          <li><a href="#delivery" class="menu-service-item active">Доставка</a></li>
+          <li><a href="#guarantee" class="menu-service-item">Гарантия</a></li>
+          <li><a href="#credit" class="menu-service-item">Кредит</a></li>
         </ul>
         <section id="delivery" class="service-description delivery">
           <div class="service-description-text">
             <h3 class="title-secondary">Доставка</h3>
-            <p class="text-content">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно
-              бесплатно!<br>
-              Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+            <p class="text-content">Мы с удовольствием доставим ваш товар прямо
+              <span class="new-line-text"> к вашему подъезду совершенно бесплатно!</span>
+              <span class="new-line-text">Ведь мы неплохо заработаем,</span>
+              <span class="new-line-text">поднимая его на ваш этаж!</span>
+            </p>
           </div>
         </section>
         <section id="guarantee" hidden>
@@ -226,14 +232,14 @@
           <li>Автотрейдинг</li>
           <li>ЖедДорЭкспедиция</li>
         </ul>
-        <a href="#" class="button button-red">Подробнее о компании</a>
+        <a href="#" class="button button-red button-write-us">Подробнее о компании</a>
       </section>
       <section class="contacts">
         <h3 class="title-secondary">Контакты</h3>
         <p class="text-content">Вы можете забрать товар сами,
           заехав в наш офис:</p>
         <a href="#big-map"><img src="img/map.png" width="300" height="158" alt="карта"></a>
-        <a href="#write-us" class="button button-red">Заблудились? напишите нам!</a>
+        <a href="#write-us" class="button button-red button-map">Заблудились? напишите нам!</a>
       </section>
     </div>
   </div>
@@ -295,24 +301,41 @@
     </p>
   </div>
 </footer>
-<article id="write-us" hidden>
+<article id="write-us" class="modal modal-write-us">
   <h2 class="visually-hidden">Форма обратной связи</h2>
-  <button type="button"><span class="visually-hidden">Закрыть</span></button>
+  <button type="button" class="button-reset modal-button-close close-write-us"><span
+          class="visually-hidden">Закрыть</span></button>
   <form action="https://echo.htmlacademy.ru" method="post">
-    <label for="name">Ваше имя:</label>
-    <input type="text" placeholder="Имя Фамилия" name="name" id="name">
-    <label for="email">Ваш e-mail:</label>
-    <input type="email" placeholder="email@examle.com" name="email" id="email">
-    <label for="text">Текст письма:</label>
-    <textarea id="text" placeholder="В свободной форме" name="text"></textarea>
-    <button type="submit">Отправить</button>
+    <div class="modal-container">
+      <div class="write-us-wrap">
+        <label><span>Ваше имя:</span>
+          <input type="text" placeholder="Имя Фамилия" name="name" id="name">
+        </label>
+        <label><span>Ваш e-mail:</span>
+          <input type="email" placeholder="email@examle.com" name="email" id="email">
+        </label>
+      </div>
+      <label><span>Текст письма:</span>
+        <textarea id="text" placeholder="В свободной форме" name="text"></textarea>
+      </label>
+    </div>
+    <div class="color-footer-modal">
+      <div class="modal-container">
+        <button type="submit" class="modal-container button-reset button-modal-write-us button button-red">Отправить
+        </button>
+      </div>
+    </div>
   </form>
 </article>
-<article id="big-map" hidden>
+<article id="big-map" class="modal modal-map">
   <h2 class="visually-hidden">Как добраться</h2>
-  <img src="img/map-big.png" width="970" height="476" alt="карта">
-  <button type="button"><span class="visually-hidden">Закрыть</span></button>
+  <iframe src="https://yandex.ru/map-widget/v1/-/CGsCIFyn" width="940" height="446" frameborder="1"
+          allowfullscreen="true"></iframe>
+  <button type="button" class="button-reset modal-button-close close-map"><span class="visually-hidden">Закрыть</span>
+  </button>
 </article>
+<script src="js/write-us.js"></script>
+<script src="js/map.js"></script>
 </body>
 </html>
 
