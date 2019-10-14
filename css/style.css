@@ -168,6 +168,14 @@ a {
     background-color: #ee3643;
 }
 
+.logo-top:hover {
+    background-color: #ca2c37;
+}
+
+.logo-top:active {
+    background-color: #ba2732;
+}
+
 .logo-top img {
     margin-top: 12px;
     margin-left: 54px;
@@ -562,12 +570,6 @@ a {
     margin-top: 20px;
 }
 
-.carousel .button {
-    position: absolute;
-    border-radius: 3px;
-    left: 25px;
-    bottom: 22px;
-}
 
 .carousel-btn {
     position: absolute;
@@ -577,6 +579,7 @@ a {
     margin-bottom: auto;
     width: 22px;
     height: 40px;
+    cursor: pointer;
 }
 
 .carousel-btn-prev {
@@ -584,9 +587,17 @@ a {
     background: url("../img/icon-left.svg") no-repeat 0 0;
 }
 
+.carousel-btn-prev:hover {
+    left: 22px;
+}
+
 .carousel-btn-next {
     right: 20px;
     background: url("../img/icon-right.svg") no-repeat 0 0;
+}
+
+.carousel-btn-next:hover{
+    right: 17px;
 }
 
 .services-wrap {
@@ -594,9 +605,16 @@ a {
 }
 
 .carousel {
+    display: flex;
+    flex-direction: column;
     width: 620px;
     height: 266px;
+    padding: 20px 25px;
 }
+
+.carousel[hidden] {
+    display: none;
+} 
 
 .carousel a:hover {
     background-color: #ca2c37;
@@ -615,8 +633,6 @@ a {
 }
 
 .carousel-title {
-    margin: 0;
-    padding: 0;
     color: #ffffff;
     font-size: 36px;
     line-height: 1;
@@ -628,13 +644,21 @@ a {
     color: #ffffff;
     font-size: 18px;
     line-height: 1.33;
-    margin: 8px 0 0 0;
+    margin-top: 8px;
 }
 
-.carousel-heading {
-    padding-top: 27px;
-    padding-left: 26px;
+.carousel .button {
+    margin-top: auto;
+    margin-right: auto;
+    padding: 14px 45px;
 }
+
+/* .carousel .button {
+    position: absolute;
+    border-radius: 3px;
+    left: 25px;
+    bottom: 22px;
+} */
 
 .about-company li {
     font-size: 18px;
