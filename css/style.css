@@ -4,8 +4,8 @@
     font-weight: 400;
     font-display: swap;
     src: local("Cuprum"),
-    url("../fonts/cuprum.woff2") format("woff2"),
-    url("../fonts/cuprum.woff") format("woff");
+        url("../fonts/cuprum.woff2") format("woff2"),
+        url("../fonts/cuprum.woff") format("woff");
 }
 
 @font-face {
@@ -14,7 +14,7 @@
     font-weight: 400;
     font-display: swap;
     src: url("../fonts/cuprumitalic.woff2") format("woff2"),
-    url("../fonts/cuprumitalic.woff") format("woff");
+        url("../fonts/cuprumitalic.woff") format("woff");
 }
 
 @font-face {
@@ -23,7 +23,7 @@
     font-weight: 700;
     font-display: swap;
     src: url("../fonts/cuprumbold.woff2") format("woff2"),
-    url("../fonts/cuprumbold.woff") format("woff");
+        url("../fonts/cuprumbold.woff") format("woff");
 }
 
 @font-face {
@@ -32,7 +32,7 @@
     font-weight: 400;
     font-display: swap;
     src: url("../fonts/ptsans.woff2") format("woff2"),
-    url("../fonts/ptsans.woff") format("woff");
+        url("../fonts/ptsans.woff") format("woff");
 }
 
 @font-face {
@@ -41,10 +41,12 @@
     font-weight: 700;
     font-display: swap;
     src: url("../fonts/ptsansbold.woff2") format("woff2"),
-    url("../fonts/ptsansbold.woff") format("woff");
+        url("../fonts/ptsansbold.woff") format("woff");
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
@@ -125,6 +127,7 @@ a {
     text-transform: uppercase;
     font-size: 14px;
     line-height: 1.29;
+    border-radius: 4px;
 }
 
 .button-red {
@@ -156,9 +159,6 @@ a {
 .partition-services {
     margin-top: 85px;
     padding-top: 68px;
-    /*
-    padding-bottom: 99px;
-    */
 }
 
 .logo-top {
@@ -596,7 +596,7 @@ a {
     background: url("../img/icon-right.svg") no-repeat 0 0;
 }
 
-.carousel-btn-next:hover{
+.carousel-btn-next:hover {
     right: 17px;
 }
 
@@ -614,7 +614,7 @@ a {
 
 .carousel[hidden] {
     display: none;
-} 
+}
 
 .carousel a:hover {
     background-color: #ca2c37;
@@ -768,15 +768,31 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+
     width: 218px;
     font-family: "PT Sans", "Arial Black", sans-serif;
     border: 1px solid #eaeaea;
     margin-left: 20px;
 }
 
+.card.new::before {
+    top: -1px;
+    right: -1px;
+}
+
+.card-parametrs {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 21px;
+}
+
 .card-buttons {
     display: none;
     width: 218px;
+    height: 168px;
     padding-top: 44px;
     padding-left: 38px;
     padding-right: 38px;
@@ -860,6 +876,7 @@ a {
     text-align: center;
     font-size: 18px;
     line-height: 1.11;
+    margin: 0;
 }
 
 .card-price {
@@ -870,16 +887,18 @@ a {
 
 .card del {
     color: #999999;
+    margin-top: 18px;
+    margin-bottom: 13px;
 }
 
 .card ins {
     color: #ffffff;
-    padding: 13px 43px 14px 36px;
+    padding: 10px 43px 10px 36px;
 
-    margin-top: 13px;
-    margin-bottom: 20px;
+    /* margin-top: 13px;
+    margin-bottom: 20px; */
     text-decoration: none;
-    background: url("../img/red-button.svg") no-repeat;
+    background: url("../img/red-button.svg") no-repeat 0 0;
 }
 
 .card img {
@@ -1008,6 +1027,31 @@ a {
 
 .form {
     border: 0 none;
+    margin: 0;
+    padding: 0 0 25px 0;
+}
+/* не работает*/
+.form:not(:last-child) {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.range-price {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.range-price::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 1px;
+    background-color: #444444;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .form legend {
@@ -1025,10 +1069,16 @@ a {
 }
 
 .form input {
+    width: 95px;
+    height: 38px;
+    text-align: center;
     font-family: "PT Sans", "Arial Black", sans-serif;
     font-size: 17px;
     line-height: 1.06;
     text-transform: uppercase;
+    color: #000000;
+    border: none;
+    background-color: #f7f3ec;
 }
 
 .factory-form li {
@@ -1041,7 +1091,7 @@ a {
     cursor: pointer;
 }
 
-.factory-label input[type="checkbox"] + .checkbox-indicator {
+.factory-label input[type="checkbox"]+.checkbox-indicator {
     position: absolute;
     left: 0;
     top: 0;
@@ -1050,7 +1100,7 @@ a {
     background: url("../img/checkbox-off.svg") no-repeat 0 0;
 }
 
-.factory-label input[type="checkbox"]:checked + .checkbox-indicator {
+.factory-label input[type="checkbox"]:checked+.checkbox-indicator {
     background: url("../img/checkbox-on.svg") no-repeat 0 0;
 }
 
@@ -1064,7 +1114,7 @@ a {
     cursor: pointer;
 }
 
-.power-label input[type="radio"] + .radio-indicator {
+.power-label input[type="radio"]+.radio-indicator {
     position: absolute;
     left: 0;
     top: 0;
@@ -1074,7 +1124,7 @@ a {
 
 }
 
-.power-label input[type="radio"]:checked + .radio-indicator {
+.power-label input[type="radio"]:checked+.radio-indicator {
     background: url("../img/radio-on.svg") no-repeat 0 0;
 }
 
@@ -1315,8 +1365,8 @@ footer a:hover {
 .new::before {
     position: absolute;
     content: "";
-    top: -1px;
-    right: -1px;
+    top: 0;
+    right: 0;
     z-index: 10;
     width: 60px;
     height: 60px;

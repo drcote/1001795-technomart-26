@@ -1,4 +1,4 @@
-let links_add_goods = document.querySelectorAll(".button-buy");
+let links_add_goods = document.querySelectorAll(".buy");
 let add_goods = document.querySelector(".modal-add-goods");
 let close_add_goods = document.querySelector(".close-add-goods");
 
