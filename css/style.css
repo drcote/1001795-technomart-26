@@ -118,6 +118,7 @@ a {
     font-family: "PT Sans", "Arial Black", sans-serif;
     font-size: 13px;
     line-height: 1.85;
+    /* margin: 0; */
 }
 
 
@@ -159,6 +160,10 @@ a {
 .partition-services {
     margin-top: 85px;
     padding-top: 68px;
+}
+
+.partition-services .text-content {
+    margin-bottom: 74px;
 }
 
 .logo-top {
@@ -220,32 +225,36 @@ a {
 .search-input::-webkit-input-placeholder {
     color: #ffffff;
 }
+
 .search-input::-moz-placeholder {
     color: #ffffff;
 }
+
 .search-input:-ms-input-placeholder {
     color: #ffffff;
 }
+
 .search-input::-ms-input-placeholder {
     color: #ffffff;
 }
+
 .search-input::placeholder {
     color: #ffffff;
 }
 
 .search-input:hover,
-.search-input:hover + .search-submit {
+.search-input:hover+.search-submit {
     background-color: #212a3a;
     opacity: 1;
 }
 
 .search-input:focus,
-.search-input:focus + .search-submit {
+.search-input:focus+.search-submit {
     background-color: #ffffff;
 }
 
-.search-input:focus + .search-submit path {
-fill: #ee3643;
+.search-input:focus+.search-submit path {
+    fill: #ee3643;
 }
 
 .search-input:focus {
@@ -408,7 +417,7 @@ fill: #ee3643;
 .user-navigation a {
     position: relative;
     display: inline-block;
-    padding: 14px 27px 15px 48px;
+    padding: 14px 27px 15px 25px;
     margin-left: 10px;
     background-color: #ffffff;
     color: #000000;
@@ -439,10 +448,8 @@ fill: #ee3643;
     display: flex;
     margin-top: 10px;
     margin-left: 17px;
-    /* position: relative; */
 }
 
-/* не рисуется точка */
 .personal-area a:first-child::after {
     position: absolute;
     content: "";
@@ -714,21 +721,10 @@ fill: #ee3643;
 }
 
 .carousel .button {
+    width: 195px;
     margin-top: auto;
     margin-right: auto;
     padding: 14px 45px;
-}
-
-/* .carousel .button {
-    position: absolute;
-    border-radius: 3px;
-    left: 25px;
-    bottom: 22px;
-} */
-
-.about-company li {
-    font-size: 18px;
-    line-height: 1.11;
 }
 
 .section {
@@ -840,7 +836,6 @@ fill: #ee3643;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-
     width: 218px;
     font-family: "PT Sans", "Arial Black", sans-serif;
     border: 1px solid #eaeaea;
@@ -859,6 +854,7 @@ fill: #ee3643;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 21px;
+    width: 100%;
 }
 
 .card-buttons {
@@ -944,15 +940,17 @@ fill: #ee3643;
 }
 
 .card-description {
+    width: 100%;
     color: #000000;
     text-align: center;
     font-size: 18px;
     line-height: 1.11;
     margin: 0;
+    padding-left: 27px;
+    padding-right: 27px;
 }
 
 .card-price {
-
     font-size: 17px;
     line-height: 1.06;
 }
@@ -966,9 +964,6 @@ fill: #ee3643;
 .card ins {
     color: #ffffff;
     padding: 10px 43px 10px 36px;
-
-    /* margin-top: 13px;
-    margin-bottom: 20px; */
     text-decoration: none;
     background: url("../img/red-button.svg") no-repeat 0 0;
 }
@@ -989,7 +984,6 @@ fill: #ee3643;
 .brands-wrap {
     display: flex;
     flex-wrap: wrap;
-    /*justify-content: space-between;*/
 }
 
 .brands-wrap a {
@@ -1074,13 +1068,33 @@ fill: #ee3643;
 }
 
 .delivery {
+    background-color: transparent;
     background: url("../img/delivery.png") no-repeat right bottom;
+}
+
+.guarantee {
+    background-color: transparent;
+    background: url("../img/guarantee.png") no-repeat right bottom;
+}
+
+.credit {
+    background-color: transparent;
+    background: url("../img/credit.png") no-repeat right bottom;
+}
+
+.credit .button {
+    padding: 14px 45px;
 }
 
 .about-company-wrap {
     display: flex;
     margin-top: 83px;
     margin-bottom: 86px;
+}
+
+.about-company li {
+    font-size: 18px;
+    line-height: 1.11;
 }
 
 .about-company li::before {
@@ -1093,8 +1107,50 @@ fill: #ee3643;
     margin-bottom: 3px;
 }
 
-.about-company-wrap .button-red {
+.about-company {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contacts {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-delivery {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-delivery li:not(:first-child) {
+    margin-top: 17px;
+}
+
+.about-company .text-content:nth-child(2),
+.contacts .text-content {
+    margin: 40px 0 40px 0;
+}
+
+.button-write-us {
+    padding: 14px 40px;
+    margin-right: 620px;
+    white-space: nowrap;
+}
+
+.button-write-us,
+.button-map {
     margin-top: 40px;
+}
+
+.button-map {
+    padding: 14px 60px 14px 64px;
+    white-space: nowrap;
 }
 
 .form {
@@ -1121,6 +1177,7 @@ fill: #ee3643;
     background-color: #f7f3ec;
     border-radius: 5px;
 }
+
 .range-button-left,
 .range-button-right {
     width: 20px;
@@ -1444,21 +1501,6 @@ footer a:hover {
     margin: auto;
 }
 
-/* .footer-social-item:nth-child(1) img {
-    width: 26px;
-    height: 15px;
-}
-
-.footer-social-item:nth-child(2) img {
-    width: 12px;
-    height: 22px;
-}
-
-.footer-social-item:nth-child(3) img {
-    width: 21px;
-    height: 21px;
-} */
-
 .footer-social a:hover,
 .footer-social a:active {
     background-color: #ee3643;
@@ -1488,7 +1530,7 @@ footer a:hover {
 }
 
 .footer-developed {
-    width: 96px;
+    width: 99px;
 }
 
 .footer-down {
