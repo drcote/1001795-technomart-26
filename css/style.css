@@ -119,7 +119,7 @@ a {
     font-family: "PT Sans", "Arial Black", sans-serif;
     font-size: 13px;
     line-height: 1.85;
-    /* margin: 0; */
+    margin: 0;
 }
 
 
@@ -163,11 +163,12 @@ a {
 
 .partition-services {
     margin-top: 85px;
-    padding-top: 68px;
+    padding-top: 65px;
 }
 
 .partition-services .text-content {
-    margin-bottom: 74px;
+    margin-top: 25px;
+    margin-bottom: 68px;
 }
 
 .logo-top {
@@ -414,7 +415,7 @@ a {
 
 .user-login-form {
     display: flex;
-    padding: 14px 10px 11px 13px;
+    padding: 11px 9px 12px 13px;
     font-size: 21px;
     line-height: 1;
     background-color: #ffffff;
@@ -425,7 +426,7 @@ a {
 }
 
 .user-login svg {
-    margin-right: 14px;
+    margin-right: 8px;
 }
 
 .user-login {
@@ -484,8 +485,8 @@ a {
 
 .personal-area {
     display: flex;
-    margin-top: 10px;
-    margin-left: 17px;
+    margin-top: 7px;
+    margin-left: 18px;
 }
 
 .personal-area a:first-child::after {
@@ -529,11 +530,11 @@ a {
 
 .crumbs {
     display: flex;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 23px;
+    padding-bottom: 19px;
 }
 
-.crumbs-item:first-child {
+.crumbs-item:first-child a {
     width: 14px;
     height: 12px;
     background: url("../img/icon-home.svg") no-repeat 0 0;
@@ -627,8 +628,8 @@ a {
 
 .perforators {
     padding-top: 32px;
-    padding-left: 30px;
-    padding-bottom: 34px;
+    padding-left: 28px;
+    padding-bottom: 26px;
 }
 
 .catalog {
@@ -819,8 +820,8 @@ a {
 .search-form-wrap {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 60px;
+    margin-top: 22px;
+    margin-bottom: 39px;
 }
 
 .search-form {
@@ -910,6 +911,24 @@ a {
     justify-content: space-between;
 }
 
+.popular-products {
+    margin-top: 53px;
+}
+
+.popular-brands {
+    margin-top: 21px;
+}
+
+.popular-brands .button {
+    padding-left: 69px;
+    padding-right: 70px;
+}
+
+.popular-products .button {
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
 .card {
     position: relative;
     display: flex;
@@ -987,7 +1006,7 @@ a {
     opacity: 1;
 }
 
-.in-bookmark {
+.card-buttons .in-bookmark {
     display: block;
     margin-top: 7px;
     padding: 14px 32px 12px 36px;
@@ -1055,24 +1074,6 @@ a {
     height: auto;
 }
 
-.popular-products {
-    margin-top: 53px;
-}
-
-.popular-brands {
-    margin-top: 21px;
-}
-
-.popular-brands .button {
-    padding-left: 69px;
-    padding-right: 70px;
-}
-
-.popular-products .button {
-    padding-left: 55px;
-    padding-right: 55px;
-}
-
 .brands-wrap {
     display: flex;
     flex-wrap: wrap;
@@ -1109,7 +1110,7 @@ a {
 .menu-service {
     position: relative;
     width: 240px;
-    padding-bottom: 73px;
+    padding-bottom: 98px;
     font-size: 21px;
     line-height: 1.43;
     font-weight: 700;
@@ -1117,8 +1118,8 @@ a {
 
 .menu-service-item {
     display: block;
-    padding-top: 21px;
-    padding-bottom: 20px;
+    padding-top: 16px;
+    padding-bottom: 17px;
     padding-left: 22px;
     width: 240px;
     color: #ffffff;
@@ -1160,9 +1161,13 @@ a {
     margin-left: 80px;
 }
 
+.service-description-text .title-secondary {
+    font-size: 36px;
+}
+
 .delivery {
     background-color: transparent;
-    background: url("../img/delivery.png") no-repeat right bottom;
+    background: url("../img/delivery.png") no-repeat right 25px;
 }
 
 .guarantee {
@@ -1181,8 +1186,9 @@ a {
 
 .about-company-wrap {
     display: flex;
-    margin-top: 83px;
-    margin-bottom: 97px;
+    justify-content: space-between;
+    margin-top: 79px;
+    margin-bottom: 85px;
 }
 
 .about-company li {
@@ -1197,7 +1203,7 @@ a {
     height: 2px;
     background-color: #ee3643;
     margin-right: 10px;
-    margin-bottom: 3px;
+    margin-bottom: 4px;
 }
 
 .about-company {
@@ -1208,7 +1214,6 @@ a {
 }
 
 .contacts {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1221,13 +1226,25 @@ a {
     justify-content: space-between; */
 }
 
-.about-delivery li:not(:first-child) {
-    margin-top: 17px;
+.about-delivery li {
+    margin-top: 21px;
 }
 
-.about-company .text-content:nth-child(2),
+.about-company .text-content:nth-child(2) {
+    margin: 25px 0 24px 0;
+}
+
 .contacts .text-content {
-    margin: 40px 0 40px 0;
+    margin: 25px 0 29px 0;
+}
+
+.contacts .button-write-us,
+.about-company .button-details {
+    margin-top: 37px;
+}
+
+.about-company .button-details {
+    width: 220px;
 }
 
 /* .button-write-us {
@@ -1260,6 +1277,7 @@ a {
     font-family: "PT Sans", "Arial Black", sans-serif;
     font-size: 13px;
     line-height: 1.38;
+    text-transform: uppercase;
     padding: 15px 39px;
 }
 
@@ -1432,7 +1450,7 @@ a {
 }
 
 .pagination-wrap {
-    margin-top: 52px;
+    margin-top: 40px;
 }
 
 .pagination {
@@ -1441,7 +1459,7 @@ a {
 
 .pagination a {
     display: block;
-    padding: 14px 15px 15px 16px;
+    padding: 10px 14px 11px 16px;
     margin-right: 10px;
     border: 1px solid #e5e5e5;
     border-radius: 3px;
@@ -1454,7 +1472,7 @@ a {
 }
 
 .pagination li:last-child a {
-    padding: 14px 32px;
+    padding: 10px 29px 10px 29px;
 }
 
 .pagination li:first-child a {
@@ -1471,8 +1489,12 @@ a {
 }
 
 .about-perforators {
-    padding-top: 67px;
-    padding-bottom: 73px;
+    padding-top: 66px;
+    padding-bottom: 68px;
+}
+
+.about-perforators .text-content {
+    padding-top: 25px;
 }
 
 .footer {
@@ -1488,7 +1510,7 @@ a {
 .footer-navigation {
     flex-grow: 1;
     margin-left: 68px;
-    margin-top: 42px;
+    margin-top: 39px;
 }
 
 .footer-up .container,
@@ -1505,11 +1527,12 @@ a {
 
 .footer-sections {
     margin-left: 24px;
-    margin-top: 45px;
+    margin-top: 35px;
 }
 
 .footer-social {
     display: flex;
+    margin-left: 54px;
 }
 
 .logo-bottom {
@@ -1529,8 +1552,9 @@ a {
     color: #f3f7f9;
     font-size: 18px;
     line-height: 1.33;
-    margin-top: 32px;
-    margin-bottom: 53px;
+    margin-top: 29px;
+    margin-bottom: 48px;
+    margin-left: 4px;
 
 }
 
@@ -1577,10 +1601,10 @@ footer a:hover {
 .footer-social a {
     display: block;
     position: relative;
-    width: 44px;
-    height: 44px;
-    margin-right: 5px;
-    border-radius: 44px;
+    width: 38px;
+    height: 38px;
+    margin-right: 8px;
+    border-radius: 38px;
     background-color: #212a3a;
 }
 
@@ -1619,15 +1643,17 @@ footer a:hover {
 
 .footer-feedback {
     width: 135px;
+    margin-right: -56px;;
 }
 
 .footer-developed {
     width: 99px;
+    margin-right: 13px;
 }
 
 .footer-down {
     padding-top: 39px;
-    padding-bottom: 35px;
+    padding-bottom: 26px;
 }
 
 .new::before {
