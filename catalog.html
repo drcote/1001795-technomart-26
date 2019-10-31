@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page-catalog">
+<body class="page">
   <header class="partition partition-header">
     <div class="top-nav">
       <div class="container">
@@ -25,8 +25,8 @@
           </form>
         </div>
         <ul class="user-menu reset-list">
-          <li><a href="#" class="bookmark">Закладки: 0</a></li>
-          <li class="basket"><a href="#" class="shop-card">Корзина: 10</a></li>
+          <li><a href="#" class="page-bookmark">Закладки: 0</a></li>
+          <li class="basket"><a href="#" class="page-shop-card">Корзина: 10</a></li>
           <li class="order"><a href="#">Оформить заказ</a></li>
         </ul>
       </div>
@@ -34,10 +34,9 @@
     <div class="container">
       <div class="header-company-wrap">
         <h2 class="site-description">Интернет-магазин
-          <span class="new-line-text">строительных материалов</span>
-          <span class="new-line-text">и инструментов для ремонта</span>
-        </h2>
-        <div class="address">
+строительных материалов
+и инструментов для ремонта</h2>
+        <div class="address page-address">
           <a href="tel:7-812-555-05-55">+7 (812) 555-05-55</a>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
@@ -86,7 +85,15 @@
   <main>
     <div class="container">
       <ul class="crumbs reset-list">
-        <li class="crumbs-item"><a href="index.html"><span class="visually-hidden">Главная</span></a></li>
+        <li class="crumbs-item">
+          <a href="index.html"><span class="visually-hidden">Главная</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12">
+              <g fill="#C1C6CE">
+                <path d="M3 8v4h4V8h2v4h4V8L8 3.516z"/>
+                <path d="M14.831 6.365L13 4.751V0h-2v2.987L8.332.635c-.02-.017-.043-.023-.064-.037a.465.465 0 0 0-.08-.047.551.551 0 0 0-.095-.024C8.062.521 8.032.515 8 .515c-.031 0-.061.006-.092.012a.46.46 0 0 0-.095.025c-.028.011-.053.029-.08.046-.021.014-.045.02-.064.037l-6.498 5.73a.501.501 0 0 0 .33.875.497.497 0 0 0 .331-.125L8 1.677l6.169 5.438a.501.501 0 0 0 .662-.75z"/>
+              </g>
+            </svg>
+        </a></li>
         <li class="crumbs-item"><a href="#">Каталог</a></li>
         <li class="crumbs-item"><a href="#">Инструмент</a></li>
         <li class="crumbs-item">Перфораторы</li>
@@ -109,7 +116,7 @@
             </div>
           </fieldset>
           <fieldset class="form">
-            <legend>Производители</legend>
+            <legend>Производители:</legend>
             <ul role="none" class="factory-form reset-list">
               <li>
                 <label class="factory-label">
@@ -326,16 +333,9 @@
     <section class="partition">
       <div class="container about-perforators">
         <h3 class="title-secondary">Пара слов о перфораторах</h3>
-        <p class="text-content">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и
-          долбления
-          отверстий в кирпиче,
-          бетоне и камне.
-          <span class="new-line-text">
-            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции
-            дрели,
-            шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут
-            совмещены отбойный молоток и ударная дрель.
-          </span>
+        <p class="text-content">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
+            шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
         </p>
       </div>
     </section>
