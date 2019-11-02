@@ -1,6 +1,6 @@
-let link_map = document.querySelector(".button-map");
-let map = document.querySelector(".modal-map");
-let close_map = document.querySelector(".close-map");
+var link_map = document.querySelector(".button-map");
+var map = document.querySelector(".modal-map");
+var close_map = document.querySelector(".close-map");
 
 link_map.addEventListener("click", function (evt) {
     evt.preventDefault();

@@ -1,6 +1,6 @@
-let link_write_us = document.querySelector(".button-write-us");
-let write_us = document.querySelector(".modal-write-us");
-let close_write_us = document.querySelector(".close-write-us");
+var link_write_us = document.querySelector(".button-write-us");
+var write_us = document.querySelector(".modal-write-us");
+var close_write_us = document.querySelector(".close-write-us");
 
 link_write_us.addEventListener("click", function (evt) {
     evt.preventDefault();
